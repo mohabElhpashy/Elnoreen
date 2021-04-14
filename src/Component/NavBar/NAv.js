@@ -93,8 +93,19 @@ this.setState({check:!this.state.check})    }
 
             </nav>:null}
            
-            
-<img className='slider' src={this.state.image[this.state.index]} alt=''/>
+            <div style={{position:'relative',display:'flex',alignItems:'center',textAlign:'center'}}>
+            <img className='slider' src={this.state.image[this.state.index]} alt=''/>
+<div className='description'>
+مؤسسة النوران لنقل العفش والأثاث مع الفك والتركيب والتغليف وعمالة مدربة
+
+    </div>
+
+            </div>
+
+<div className='desc'> 
+<h2>أنت في أمان مع النورين</h2><hr/>
+نوفر لجميع عملائنا خدمة فك و تركيب الاثاث و المنقولات للحفاظ عليه من أى خدش او تجريح أو تكسير أثناء عملية نقل الاثاث خدمة فك وتركيب الأثاث مهمتنا المقدمة من شركتنا لعملائنا الكرام حيث نقدم لكم متخصصون فى عملية فك الأثاث واى محتوى آخر بحرفية ومهنية
+     شديدة حفاظاً منا على منقولاتكم وتسليمها </div>
 
         </header>
     )}
