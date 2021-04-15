@@ -8,6 +8,8 @@ import Logo from '../../assest/img/LOGO.png'
 import Slide1 from '../../assest/img/slide1.jpg'
 import Slide2 from '../../assest/img/slide2.jpg'
 import Slide3 from '../../assest/img/slide3.jpg'
+import { NavLink } from "react-router-dom";
+
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -24,6 +26,9 @@ class NAv extends Component {
 
      showdiv=()=>{
 this.setState({check:!this.state.check})    }
+homePAge=()=>{
+  window.location='/'
+}
     componentDidMount() {
         Aos.init({ duration: 2000 });
         if (this.state.index === this.state.image.length)
@@ -48,7 +53,12 @@ this.setState({check:!this.state.check})    }
             <img className='Logo' src={Logo} alt=''/>
 
             <ul>
-            <li>الرئيسية</li>
+            <li><NavLink  onClick={this.homePAge}
+                  exact
+                  activeClassName="main-nav-active"
+                  to="/">الرئيسية
+                  </NavLink>
+            </li>
             <li>الخدمات</li>
             <li>نقل اثاث السعوديه</li>
             <li>من نحن</li>
@@ -102,10 +112,7 @@ this.setState({check:!this.state.check})    }
 
             </div>
 
-<div className='desc'> 
-<h2>أنت في أمان مع النورين</h2><hr/>
-نوفر لجميع عملائنا خدمة فك و تركيب الاثاث و المنقولات للحفاظ عليه من أى خدش او تجريح أو تكسير أثناء عملية نقل الاثاث خدمة فك وتركيب الأثاث مهمتنا المقدمة من شركتنا لعملائنا الكرام حيث نقدم لكم متخصصون فى عملية فك الأثاث واى محتوى آخر بحرفية ومهنية
-     شديدة حفاظاً منا على منقولاتكم وتسليمها </div>
+
 
         </header>
     )}

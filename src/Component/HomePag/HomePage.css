@@ -1,0 +1,35 @@
+.Content{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.Rightdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.divin_div{
+    width:600px;
+    margin-right:15px;
+}
+@media(max-width:897px){
+    .Content{
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .one{
+       
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .divin_div{
+        width: 400px;
+    }
+}

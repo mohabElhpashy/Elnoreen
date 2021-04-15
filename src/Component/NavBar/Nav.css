@@ -30,6 +30,9 @@
             justify-content: space-around;
             text-transform:uppercase
             }
+            .nav1 ul li a{
+                text-decoration: none;}
+           
             .nav1 ul li:hover{
                 cursor: pointer;
                 background-color: white;
@@ -99,6 +102,21 @@
                 background-color: white;
                 color: black;
             }
+            .active {
+                font-weight: bold;
+                width: 40px;
+
+              }
+             
+              .main-nav-active {
+                background-color: white;
+                color: #e0060c;
+                /* border-radius:5px ; */
+                padding:0 30px;
+            padding:0 30px;
+
+            
+              }
             span{
                 margin-left: 15px;
             }
