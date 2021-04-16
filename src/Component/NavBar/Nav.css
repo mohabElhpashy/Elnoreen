@@ -42,7 +42,6 @@
 
             .Logo{
 
-                /* margin-left: 50px; */
                 font-weight:bold
             }
             .nav2{
@@ -111,7 +110,6 @@
               .main-nav-active {
                 background-color: white;
                 color: #e0060c;
-                /* border-radius:5px ; */
                 padding:0 30px;
             padding:0 30px;
 
@@ -126,7 +124,6 @@
                 background-size: 100%;
                 height: 400px;
                 background-position: center;
-                /* position: absolute; */
             }
             .description{
                 display: flex;
@@ -165,8 +162,7 @@
                 .dash{
                     display: block;
                     cursor: pointer;
-                    /* width:200px;
-                    height:50px */
+                   
                 }
                 .nav1 ul li {
                     display: none;
@@ -191,6 +187,4 @@
                     display: none;
                 }
             }
-            /* @media(min-width:450px){
-                margin-right:-5px;
-            } */
+           

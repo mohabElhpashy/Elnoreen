@@ -9,8 +9,6 @@ import Slide1 from '../../assest/img/slide1.jpg'
 import Slide2 from '../../assest/img/slide2.jpg'
 import Slide3 from '../../assest/img/slide3.jpg'
 import { NavLink } from "react-router-dom";
-
-
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -20,9 +18,6 @@ class NAv extends Component {
         image: [Slide1,Slide2,Slide3],
         index: 0,
       };
-    // const [state,setState]=useState(false);
-    // const [Slides,setSlides]=useState([Slide1,Slide2,Slide3]);
-    // const [index,setindex]=useState(0);
 
      showdiv=()=>{
 this.setState({check:!this.state.check})    }
@@ -50,7 +45,7 @@ homePAge=()=>{
         <header id='Header'>
 
             <nav className='nav1'>
-            <img className='Logo' src={Logo} alt=''/>
+            <img className='Logo' data-aos="fade-right" src={Logo} alt=''/>
 
             <ul>
             <li><NavLink  onClick={this.homePAge}
@@ -90,7 +85,7 @@ homePAge=()=>{
                 <div>نقل اثاث السعوديه</div><hr/>
                 <div>من نحن</div>
                 <div style={{backgroundColor:'white'}}>
-                    <span><FaFacebookSquare size={30} color='red' enableBackground/></span> 
+                    <span><FaFacebookSquare size={30} color='red' /></span> 
                     <span><FaYoutube size={30} color='red'/></span>
                     <span><FaTwitter size={30} color='red'/> </span>
                     <span><FaInstagram size={30} color='red'/></span>
@@ -103,8 +98,8 @@ homePAge=()=>{
 
             </nav>:null}
            
-            <div style={{position:'relative',display:'flex',alignItems:'center',textAlign:'center'}}>
-            <img className='slider' src={this.state.image[this.state.index]} alt=''/>
+        <div style={{position:'relative',display:'flex',alignItems:'center',textAlign:'center'}}>
+          <img className='slider' src={this.state.image[this.state.index]} alt=''/>
 <div className='description'>
 مؤسسة النوران لنقل العفش والأثاث مع الفك والتركيب والتغليف وعمالة مدربة
 
