@@ -1,0 +1,13 @@
+.Who{
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+    line-height: 48px;
+}
+@media(max-width:897px){
+    .Who{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

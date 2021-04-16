@@ -1,190 +1,201 @@
-            *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;}
+                *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;}
 
 
 
-            .nav1{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 42px 25px;
-                width:100%;
-                background-color: #282c34;
-                height: 70px;
-                color:white;
-                font-weight: bold;
-                font-style: italic;
-            }
-            .nav1 ul{
-                list-style-type: none;
-                margin-right: 50px;
-                display: flex;
-            flex-direction:row;
-                
-            }
-            .nav1 ul li{
+                .nav1{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 42px 25px;
+                    width:100%;
+                    background-color: #282c34;
+                    height: 70px;
+                    color:white;
+                    font-weight: bold;
+                    font-style: italic;
+                }
+                .nav1 ul{
+                    list-style-type: none;
+                    margin-right: 50px;
+                    display: flex;
+                flex-direction:row;
+                    
+                }
+                .nav1 ul li{
 
-            padding:0 30px;
-            justify-content: space-around;
-            text-transform:uppercase
-            }
-            .nav1 ul li a{
-                text-decoration: none;}
-           
-            .nav1 ul li:hover{
-                cursor: pointer;
-                background-color: white;
-                color: #e0060c;
-                border-radius:8px ;
-            }
-
-            .Logo{
-
-                font-weight:bold
-            }
-            .nav2{
-                background-color: #e0060c;
-                margin-top:0;
-                width: 100%;
-                height: 40px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color:white;
-                font-style: italic;
-            }
-            .nav2 ul{
-                list-style-type: none;
-                margin-right: 50px;
-                
-            }
-            .nav2 ul li{
-            display: inline-block;
-            padding:0 10px;
-            text-transform:uppercase
-
-            }
-            .nav2 div{
-            display:flex;
-            justify-content: space-around;
-            margin-left: 30px;
-            }
-            .nav2 div div{
-                margin-left:20px
-            
-            }
-            .dash{
-                display: none;
-                margin-left: 0;
-            }
-            .nav3{
-                display: flex;
-                flex-direction: column;
-                /* align-items: center; */
-                background-color:
-                #1C2833;
-                color:white;
-                font-weight: bold;
-                font-style: italic;
-                width: 100%;
-                position: absolute;
-                z-index: 15;
-            }
-            .nav3 div {
-                margin-bottom: 18px;
-                margin-top: 14px;
-            }
-            .nav3 div:hover{
-                cursor: pointer;
-                background-color: white;
-                color: black;
-            }
-            .active {
-                font-weight: bold;
-                width: 40px;
-
-              }
-             
-              .main-nav-active {
-                background-color: white;
-                color: #e0060c;
                 padding:0 30px;
-            padding:0 30px;
-
+                justify-content: space-around;
+                text-transform:uppercase
+                }
+                .nav1 ul li a{
+                    text-decoration: none;
+                    color: white;
+                }
             
-              }
-            span{
-                margin-left: 15px;
-            }
-            .slider{
-                margin-left: 0;
-                width: 100%;
-                background-size: 100%;
-                height: 400px;
-                background-position: center;
-            }
-            .description{
-                display: flex;
-                align-items: center;
-            position: absolute;
-            top: 50px;
-            left: 0;
-            z-index: 5;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white;
-            text-align: center;
-            line-height: 50px;
-            border-width: 0px;
-            font-weight: bold;
-            
-            font-size: 40px;
-            white-space: pre-wrap;
-        width: 70%;
-        height: 150px;
-        margin-left: 180px;
-            opacity: 1;
-            font-style: italic;
-        }
-        .desc{
-            background-color: gainsboro;
-            color: black;
-            border-radius: 8px;
-            width: 70%;
-            box-shadow: -5px -5px 10px gray;
-            margin: auto;
-            margin-top: 10px;
-            line-height: 30px;
-            font-weight: bold;
-        }
-            @media(max-width:897px){
-                .dash{
-                    display: block;
+                .nav1 ul li a:hover{
                     cursor: pointer;
-                   
+                    background-color: white;
+                    color: #e0060c;
+                    border-radius:8px ;
                 }
-                .nav1 ul li {
-                    display: none;
-                }
-                .nav2{display: none;}
+
                 .Logo{
-                    margin-left: -72px;
-                    width: 250px;
+
+                    font-weight:bold
+                }
+                .nav2{
+                    background-color: #e0060c;
+                    margin-top:0;
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color:white;
+                    font-style: italic;
+                }
+                .nav2 ul{
+                    list-style-type: none;
+                    margin-right: 50px;
+                    
+                }
+                .nav2 ul li{
+                display: inline-block;
+                padding:0 10px;
+                text-transform:uppercase
+
+                }
+                .nav2 div{
+                display:flex;
+                justify-content: space-around;
+                margin-left: 30px;
+                }
+                .nav2 div div{
+                    margin-left:20px
+                
+                }
+                .dash{
+                    display: none;
+                    margin-left: 0;
+                }
+                .nav3{
+                    display: flex;
+                    flex-direction: column;
+                    /* align-items: center; */
+                    background-color:
+                    #1C2833;
+                    color:white;
+                    font-weight: bold;
+                    font-style: italic;
+                    width: 100%;
+                    position: absolute;
+                    z-index: 15;
+                }
+                .nav3 ul li{
+                    margin-bottom: 40px;
+                    padding: 15px;
+                }
+
+                .nav3 ul li a{
+                    text-decoration: none;
+                    color: white;
+                }
+            
+                .nav3 ul li a:hover{
+                    cursor: pointer;
+                    background-color: white;
+                    color: #e0060c;
+                    border-radius:8px ;
+                }
+                .active {
+                    font-weight: bold;
+                    width: 40px;
+
+                }
+                
+                .main-nav-active {
+                    /* background-color: white; */
+                    border: 1px solid white;
+                    border-radius: 8px;
+                    padding:0 30px;
+                    background-color: red;
+                padding:0 30px;
+
+                
+                }
+                span{
+                    margin-left: 15px;
+                }
+                .slider{
+                    margin-left: 0;
+                    width: 100%;
+                    background-size: 100%;
+                    height: 400px;
+                    background-position: center;
                 }
                 .description{
-                    height: 300px;
-                    margin-left: 70px;
-                    line-height: 50px;
-                    
-                    font-size: 30px;
-                }
+                    display: flex;
+                    align-items: center;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                z-index: 5;
+                background-color: rgba(0, 0, 0, 0.6);
+                color: white;
+                text-align: center;
+                line-height: 50px;
+                border-width: 0px;
+                font-weight: bold;
                 
+                font-size: 40px;
+                white-space: pre-wrap;
+            width: 70%;
+            height: 150px;
+            margin-left: 180px;
+                opacity: 1;
+                font-style: italic;
             }
-        
-            @media(min-width:897px){
-                .nav3{
-                    display: none;
+            .desc{
+                background-color: gainsboro;
+                color: black;
+                border-radius: 8px;
+                width: 70%;
+                box-shadow: -5px -5px 10px gray;
+                margin: auto;
+                margin-top: 10px;
+                line-height: 30px;
+                font-weight: bold;
+            }
+                @media(max-width:897px){
+                    .dash{
+                        display: block;
+                        cursor: pointer;
+                    
+                    }
+                    .nav1 ul li {
+                        display: none;
+                    }
+                    .nav2{display: none;}
+                    .Logo{
+                        margin-left: -72px;
+                        width: 250px;
+                    }
+                    .description{
+                        height: 300px;
+                        margin-left: 70px;
+                        line-height: 50px;
+                        
+                        font-size: 30px;
+                    }
+                    
                 }
-            }
-           
+            
+                @media(min-width:897px){
+                    .nav3{
+                        display: none;
+                    }
+                }
+            

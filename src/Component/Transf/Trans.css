@@ -1,0 +1,15 @@
+.trans{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+@media(max-width:897px){
+    .trans{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+}

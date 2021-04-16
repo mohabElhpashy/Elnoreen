@@ -24,6 +24,12 @@ this.setState({check:!this.state.check})    }
 homePAge=()=>{
   window.location='/'
 }
+Who_We_Are=()=>{
+  window.location='/Who_We'
+}
+Trans=()=>{
+  window.location='/Trans'
+}
     componentDidMount() {
         Aos.init({ duration: 2000 });
         if (this.state.index === this.state.image.length)
@@ -54,10 +60,14 @@ homePAge=()=>{
                   to="/">الرئيسية
                   </NavLink>
             </li>
-            <li>الخدمات</li>
-            <li>نقل اثاث السعوديه</li>
-            <li>من نحن</li>
-            {/* <li className="dash"> </li> */}
+            <li>   <NavLink  onClick={this.Trans}  exact
+                  activeClassName="main-nav-active"
+                  to="/Trans"> نقل اثاث السعوديه
+                  </NavLink></li>
+            <li><NavLink  onClick={this.Who_We_Are}  exact
+                  activeClassName="main-nav-active"
+                  to="/Who_We">من نحن
+                  </NavLink></li>
 
             </ul>
             <div className="dash" onClick={this.showdiv}><IoMdReorder size={50}/></div>
@@ -79,11 +89,22 @@ homePAge=()=>{
             </ul>
             </nav>
             {this.state.check? <nav data-aos="fade-down" className='nav3'>
-                
-                <div>الرئيسية</div><hr/>
-                <div>الخدمات</div><hr/>
-                <div>نقل اثاث السعوديه</div><hr/>
-                <div>من نحن</div>
+               <ul >
+                 <li ><NavLink  onClick={this.homePAge}
+                  exact
+                  activeClassName="main-nav-active"
+                  to="/">الرئيسية
+                  </NavLink></li><hr/>
+                 <li>  <NavLink  onClick={this.Trans}  exact
+                  activeClassName="main-nav-active"
+                  to="/Trans"> نقل اثاث السعوديه
+                  </NavLink></li><hr/>
+                 <li><NavLink  onClick={this.Who_We_Are}  exact
+                  activeClassName="main-nav-active"
+                  to="/Who_We">من نحن
+                  </NavLink> </li>
+
+               </ul>
                 <div style={{backgroundColor:'white'}}>
                     <span><FaFacebookSquare size={30} color='red' /></span> 
                     <span><FaYoutube size={30} color='red'/></span>
