@@ -19,7 +19,7 @@ function Whats() {
           >
             <AiOutlinePhone size={50} color="white" />
             <Typical
-              steps={["Phone", 2000, "0503675243", 1000]}
+              steps={["Phone", 2000, "0544072170", 1000]}
               loop={Infinity}
               wrapper="p"
             />
