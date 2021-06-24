@@ -1,27 +1,10 @@
-.Footer{
-    background-color: #1C2833;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    height: 250px;
-    display: flex;
-    justify-content: space-around;
-
+.Footer {
+  background-color: #242323;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  height: 30rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.ContactDiv{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    color: white;
-}
-.line {
-    position: relative;
-    margin: 30px auto;
-    width: 70%;
-    margin-top: -22px;
-    height: 1px;
-    background-color: red;
-  }
-
-
-  

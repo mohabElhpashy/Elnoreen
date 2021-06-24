@@ -1,0 +1,47 @@
+.Whats {
+  width: 100%;
+  height: 4rem;
+  background-color: #da2b4c;
+  position: fixed;
+  bottom: 0;
+  display: none;
+  z-index: 18;
+
+  /* animation: leaves 4s ease-in-out infinite; */
+}
+.WtsIcon {
+  position: absolute;
+
+  background-color: #4dc247;
+  border-radius: 34px;
+  top: -16px;
+  right: 40px;
+}
+.FixedWtsIcon {
+  position: fixed;
+  z-index: 40;
+  background-color: #4dc247;
+  border-radius: 34px;
+  bottom: 0;
+  right: 40px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 920px) {
+  .Whats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .FixedWtsIcon {
+    display: none;
+  }
+}
+@keyframes leaves {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}

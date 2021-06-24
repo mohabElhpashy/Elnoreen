@@ -1,0 +1,53 @@
+.Aboutus {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Contain_Img {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.Contain_Img img {
+  width: 35%;
+  border-radius: 10px;
+  border-bottom: 10px solid #da2b4c;
+  transition: transform 0.7s;
+}
+.Contain_Img img:hover {
+  transform: scale(1.2);
+}
+.Mid {
+  position: absolute;
+  top: 50%;
+  left: 5%0;
+  z-index: 8;
+  text-align: center;
+}
+
+.about_content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: ghostwhite;
+  margin: auto;
+  margin-top: 80px;
+  border: 1px solid #da2b4c;
+  border-radius: 9px;
+  margin-bottom: 70px;
+}
+.about_content p {
+  padding: 15px;
+  font-weight: bold;
+  line-height: 31px;
+  text-align: center;
+  border-bottom: 1px solid gainsboro;
+}

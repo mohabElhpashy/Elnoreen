@@ -1,207 +1,119 @@
-import { Component } from "react";
+import React, { Fragment } from "react";
+import { NavLink } from "react-router-dom";
 import "./Nav.css";
-import {
-  FaFacebookSquare,
-  FaYoutube,
-  FaTwitter,
-  FaInstagram,
-} from "react-icons/fa";
-import { AiFillMail } from "react-icons/ai";
+import Logo from "../../assest/img/My_Logo.PNG";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { AiTwotoneMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 import { IoMdReorder } from "react-icons/io";
-import Logo from "../../assest/img/logopart1.png";
-import Slide1 from "../../assest/img/slide1.jpg";
-import Slide2 from "../../assest/img/slide2.jpg";
-import Slide3 from "../../assest/img/slide3.jpg";
-import { NavLink } from "react-router-dom";
-import Aos from "aos";
-import "aos/dist/aos.css";
-
-class NAv extends Component {
-  state = {
-    check: false,
-    image: [Slide1, Slide2, Slide3],
-    index: 0,
-  };
-
-  showdiv = () => {
-    this.setState({ check: !this.state.check });
-  };
-  homePAge = () => {
-    window.location = "/";
-  };
-  Who_We_Are = () => {
-    window.location = "/Who_We";
-  };
-  Trans = () => {
-    window.location = "/Trans";
-  };
-  componentDidMount() {
-    Aos.init({ duration: 2000 });
-    if (this.state.index === this.state.image.length)
-      this.setState({ index: 0 });
-
-    setInterval(() => {
-      this.setState({
-        index: this.state.index + 1,
-      });
-      if (this.state.index >= this.state.image.length) {
-        this.setState({ index: 0 });
-      }
-    }, 6000);
-  }
-
-  render() {
-    return (
-      <header id="Header">
-        <nav className="nav1">
-          <img className="Logo" data-aos="fade-right" src={Logo} alt="" />
-
-          <ul>
-            <li>
-              <NavLink
-                onClick={this.homePAge}
-                exact
-                activeClassName="main-nav-active"
-                to="/"
-              >
-                الرئيسية
-              </NavLink>
-            </li>
-            <li>
-              {" "}
-              <NavLink
-                onClick={this.Trans}
-                exact
-                activeClassName="main-nav-active"
-                to="/Trans"
-              >
-                {" "}
-                نقل اثاث بالرياض
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                onClick={this.Who_We_Are}
-                exact
-                activeClassName="main-nav-active"
-                to="/Who_We"
-              >
-                من نحن
-              </NavLink>
-            </li>
-          </ul>
-          <div className="dash" onClick={this.showdiv}>
-            <IoMdReorder color="black" size={50} />
-          </div>
-        </nav>
-
-        <nav className="nav2">
-          <div>
-            <div>
-              <span>
-                <AiFillMail size={20} />
-              </span>
-              mohamed.rageb@gmail.com
-            </div>
-            <div>
-              <span>
-                <BiPhoneCall size={20} />
-              </span>
-              01118858925
-            </div>
-          </div>
-
-          {/* <ul>
-            <li>
-              <FaFacebookSquare color="black" size={30} />
-            </li>
-            <li>
-              <FaYoutube size={30} />
-            </li>
-            <li>
-              <FaTwitter size={30} />{" "}
-            </li>
-            <li>
-              <FaInstagram size={30} />{" "}
-            </li>
-          </ul> */}
-        </nav>
-        {this.state.check ? (
-          <nav data-aos="fade-down" className="nav3">
-            <ul>
-              <li>
-                <NavLink
-                  onClick={this.homePAge}
-                  exact
-                  activeClassName="main-nav-active"
-                  to="/"
-                >
-                  الرئيسية
-                </NavLink>
-              </li>
-              <hr />
-              <li>
-                {" "}
-                <NavLink
-                  onClick={this.Trans}
-                  exact
-                  activeClassName="main-nav-active"
-                  to="/Trans"
-                >
-                  {" "}
-                  نقل اثاث السعوديه
-                </NavLink>
-              </li>
-              <hr />
-              <li>
-                <NavLink
-                  onClick={this.Who_We_Are}
-                  exact
-                  activeClassName="main-nav-active"
-                  to="/Who_We"
-                >
-                  من نحن
-                </NavLink>{" "}
-              </li>
-            </ul>
-            <div style={{ backgroundColor: "white" }}>
-              <span>
-                <FaFacebookSquare size={30} color="black" />
-              </span>
-              <span>
-                <FaYoutube size={30} color="black" />
-              </span>
-              <span>
-                <FaTwitter size={30} color="black" />{" "}
-              </span>
-              <span>
-                <FaInstagram size={30} color="black" />
-              </span>
-            </div>
-          </nav>
-        ) : null}
-
-        <div
+function NAv({ open }) {
+  return (
+    <Fragment>
+      <header className="Header">
+        <h2
           style={{
-            position: "relative",
             display: "flex",
             alignItems: "center",
-            textAlign: "center",
+            color: "red",
+            fontWeight: "bold",
           }}
         >
-          <img
-            className="slider"
-            src={this.state.image[this.state.index]}
-            alt=""
-          />
-          <div className="description">
-            شركه فرنيتشر لنقل الأثاث مع الفك والتركيب والتغليف وعمالة مدربة
+          <img src={Logo} alt="" />
+          قمم الرياض
+        </h2>
+        <div className="CustomeHeader">
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <AiTwotoneMail color="red" size={30} />{" "}
+            <div>
+              <h5 style={{ color: "gray" }}>Email Address</h5>
+              <h6>mohamedrageb@gmail,com</h6>
+            </div>
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              borderLeft: "1px solid  gray",
+            }}
+          >
+            <BiPhoneCall color="red" size={30} />
+            <div>
+              <h5 style={{ color: "gray" }}>Phone Number</h5>
+              <h6>0640472170</h6>
+            </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              borderLeft: "1px solid  gray",
+            }}
+          >
+            <HiOutlineLocationMarker color="red" size={30} />
+            <div>
+              <h5 style={{ color: "gray" }}>Head Office</h5>
+              <h6>elRyad</h6>
+            </div>
           </div>
         </div>
+        <IoMdReorder onClick={open} className="Threedotts" size={40} />
       </header>
-    );
-  }
+
+      <nav className="nav">
+        <ul>
+          <li className="active">
+            <NavLink
+              // onClick={check_and_hide}
+              exact
+              activeClassName="main-nav-active"
+              to="/"
+            >
+              الصفحه الرئيسيه
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              // onClick={check_and_hide}
+              exact
+              to="/About_us"
+              activeClassName="main-nav-active"
+            >
+              معلومات عنا
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              // onClick={check_and_hide}
+              exact
+              activeClassName="main-nav-active"
+              to="/Serviece"
+            >
+              خدمات{" "}
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              // onClick={check_and_hide}
+              exact
+              activeClassName="main-nav-active"
+              to="/gallery"
+            >
+              صاله عرض
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </Fragment>
+  );
 }
 
 export default NAv;
