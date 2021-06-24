@@ -7,30 +7,40 @@ function Whats() {
   return (
     <Fragment>
       <div className={Style.Whats}>
-        <h2
-          style={{
-            display: "flex",
-            alignItems: "center",
-            color: "white",
-            fontWeight: "bold",
-            marginRight: "80px",
-          }}
-        >
-          <AiOutlinePhone size={50} color="white" />
-          <Typical
-            steps={["Phone", 2000, "0640472170", 1000]}
-            loop={Infinity}
-            wrapper="p"
-          />
-        </h2>
+        <a style={{ textDecoration: "none" }} href="tel:+1-555-555-1212">
+          <h2
+            style={{
+              display: "flex",
+              alignItems: "center",
+              color: "white",
+              fontWeight: "bold",
+              marginRight: "80px",
+            }}
+          >
+            <AiOutlinePhone size={50} color="white" />
+            <Typical
+              steps={["Phone", 2000, "0503675243", 1000]}
+              loop={Infinity}
+              wrapper="p"
+            />
+          </h2>{" "}
+        </a>
+
         <div className={Style.WtsIcon}>
-          <AiOutlineWhatsApp color="white" size={50} />
+          <a
+            href="https://wa.me/+966503675243"
+            class="whatsapp_float"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiOutlineWhatsApp color="white" size={50} />
+          </a>
         </div>
       </div>
 
       <div className={Style.FixedWtsIcon}>
         <a
-          href="https://wa.me/+971540472170"
+          href="https://wa.me/+966503675243"
           class="whatsapp_float"
           target="_blank"
           rel="noopener noreferrer"

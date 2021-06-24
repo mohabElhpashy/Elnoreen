@@ -20,14 +20,16 @@
 }
 nav {
   width: 70%;
-  height: 4rem;
+  height: 6rem;
   margin: auto;
   margin-top: 20px;
   background-color: #212020;
   border-bottom-left-radius: 36.5px;
-  border-top-left-radius: 36.5px; /* background-color: var(--thm-black); */
+  border-top-left-radius: 36.5px;
+  /* background-color: var(--thm-black); */
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 .nav ul {
   width: 93%;
@@ -38,9 +40,17 @@ nav {
   align-items: end;
 }
 .nav ul li a {
+  color: gray;
   text-decoration: none;
-  /* color: gray; */
-  font-weight: bold;
+  /* letter-spacing: 0.1em; */
+  /* text-transform: uppercase; */
+  /* font-size: 13px; */
+  /* font-weight: 600; */
+  position: relative;
+  padding: 10px 10px;
+  letter-spacing: 0.2em;
+  /* font-family: "Roboto", Arial, sans-serif; */
+  transition: 0.3s;
 }
 
 .main-nav-active {

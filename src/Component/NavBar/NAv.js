@@ -32,7 +32,13 @@ function NAv({ open }) {
             <AiTwotoneMail color="red" size={30} />{" "}
             <div>
               <h5 style={{ color: "gray" }}>Email Address</h5>
-              <h6>mohamedrageb@gmail,com</h6>
+              <a
+                style={{ color: "black" }}
+                href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsCTrvDxrLFXdzWbnMPmGcRcZqwFMnLsnGwClHfMbZcJjvbVVHvkSDJbGWQJHLqphGGCbQPV"
+              >
+                {" "}
+                <h6>QIMAMALRIYAD2021@gmail.com</h6>
+              </a>
             </div>
           </div>
 
@@ -43,10 +49,12 @@ function NAv({ open }) {
               borderLeft: "1px solid  gray",
             }}
           >
-            <BiPhoneCall color="red" size={30} />
+            <a style={{ textDecoration: "none" }} href="tel:+966-0540472170">
+              <BiPhoneCall color="red" size={30} />
+            </a>
             <div>
               <h5 style={{ color: "gray" }}>Phone Number</h5>
-              <h6>0640472170</h6>
+              <h6>0544072170</h6>
             </div>
           </div>
           <div

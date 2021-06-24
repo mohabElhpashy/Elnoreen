@@ -1,31 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Slider.css";
 import Logo from "../../assest/img/My_Logo.PNG";
-import {
-  AiFillFacebook,
-  AiOutlineGoogle,
-  AiFillLinkedin,
-} from "react-icons/ai";
-import { FaYoutube } from "react-icons/fa";
-function Slider({ showSlider }) {
-  const [change_status, setchange_status] = useState(true);
-
-  //   if (showSlider === false) {
-  //     document.getElementById("MAIN").style.width = "0px";
-  //     setchange_status(true);
-  //   }
-  //   if (showSlider) {
-  //     document.getElementById("MAIN").style.width = "270px";
-  //     setchange_status(false);
-  //   }
-
-  // const check_and_hide = () => {
-  //   alert("lsld");
-  // if (window.innerWidth >= 900) {
-  //   document.getElementById("MAIN").style.width = "0px";
-  // }
-
+import { AiFillFacebook, AiOutlineGoogle } from "react-icons/ai";
+import { BiPhoneCall } from "react-icons/bi";
+function Slider({ showSlider, closeSlider }) {
   return (
     <>
       {showSlider ? (
@@ -47,7 +26,7 @@ function Slider({ showSlider }) {
             <ul>
               <li className="active">
                 <NavLink
-                  // onClick={check_and_hide}
+                  onClick={closeSlider}
                   exact
                   activeClassName="main-nav-active"
                   to="/"
@@ -58,7 +37,7 @@ function Slider({ showSlider }) {
 
               <li>
                 <NavLink
-                  // onClick={check_and_hide}
+                  onClick={closeSlider}
                   exact
                   to="/About_us"
                   activeClassName="main-nav-active"
@@ -68,7 +47,7 @@ function Slider({ showSlider }) {
               </li>
               <li>
                 <NavLink
-                  // onClick={check_and_hide}
+                  onClick={closeSlider}
                   exact
                   activeClassName="main-nav-active"
                   to="/Serviece"
@@ -79,7 +58,7 @@ function Slider({ showSlider }) {
 
               <li>
                 <NavLink
-                  // onClick={check_and_hide}
+                  onClick={closeSlider}
                   exact
                   activeClassName="main-nav-active"
                   to="/gallery"
@@ -91,16 +70,21 @@ function Slider({ showSlider }) {
           </div>
           <div className="fh5co-footer">
             <div className="icons">
-              <a href="https://www.facebook.com/mohab.elhpashy">
+              <a href="/">
                 {" "}
                 <AiFillFacebook color="white" size={35} />
               </a>
 
-              <a href="mailto:mohab.hafez332@gmail.com">
+              <a
+                style={{ color: "black" }}
+                href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsCTrvDxrLFXdzWbnMPmGcRcZqwFMnLsnGwClHfMbZcJjvbVVHvkSDJbGWQJHLqphGGCbQPV"
+              >
+                {" "}
                 <AiOutlineGoogle color="white" size={35} />
               </a>
-              <a href="mailto:mohab.hafez332@gmail.com">
-                <FaYoutube color="white" size={35} />
+
+              <a href="tel:+966-0540472170">
+                <BiPhoneCall color="white" size={35} />
               </a>
             </div>
           </div>

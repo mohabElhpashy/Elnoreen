@@ -1,18 +1,11 @@
 import React, { useEffect } from "react";
 import "./Footer.css";
-import Contact from "../../assest/img/contact.png";
 import My_Logo from "../../assest/img/My_Logo.PNG";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { AiTwotoneMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import {
-  FaFacebookSquare,
-  FaYoutube,
-  FaTwitter,
-  FaInstagram,
-} from "react-icons/fa";
 
 function Footer() {
   useEffect(() => {
@@ -65,9 +58,9 @@ function Footer() {
             fontWeight: "bold",
           }}
         >
-          شركة افضلية لنقل الاثاث هي شركة النقل الرائدة في الإمارات العربية
-          المتحدة. نعم ، ن حن اسم مشهور كلما كان هناك حديث عن أفضل شركات نقل
-          الأثاث في الإمارات.
+          شركة قمم الرياض الاثاث هي شركة النقل الرائدة في المملكه العربية
+          السعوديه. نعم ، نحن اسم مشهور كلما كان هناك حديث عن أفضل شركات نقل
+          الأثاث في السعوديه.
         </h3>
         <div
           style={{

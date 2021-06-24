@@ -16,16 +16,42 @@ function App() {
   const MAke_slider_open = () => {
     setshowSlider(!showSlider);
   };
+  const Close_Slider = () => {
+    setshowSlider(false);
+  };
   return (
     <div className={Style.app}>
       <Router>
         <Nav open={MAke_slider_open} />
-        <Slider showSlider={showSlider} />
+        <Slider closeSlider={Close_Slider} showSlider={showSlider} />
         <Switch>
-          <Route path="/" exact component={HomePage} />
-          <Route path="/About_us" exact component={Aboutus} />
-          <Route path="/Serviece" exact component={Serv} />
-          <Route path="/gallery" exact component={Gallery} />
+          <Route
+            path="/"
+            exact
+            render={(props) => (
+              <HomePage closeSlider={Close_Slider} {...props} />
+            )}
+          />
+
+          <Route
+            path="/About_us"
+            exact
+            render={(props) => (
+              <Aboutus closeSlider={Close_Slider} {...props} />
+            )}
+          />
+          <Route
+            path="/Serviece"
+            exact
+            render={(props) => <Serv closeSlider={Close_Slider} {...props} />}
+          />
+          <Route
+            path="/gallery"
+            exact
+            render={(props) => (
+              <Gallery closeSlider={Close_Slider} {...props} />
+            )}
+          />
         </Switch>
         <Whats />
         <Footer />

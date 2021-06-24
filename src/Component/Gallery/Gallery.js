@@ -10,9 +10,9 @@ import G6 from "../../assest/img/threee.jpg";
 import G8 from "../../assest/img/home_three.jpg";
 import G9 from "../../assest/img/fourrrr.jpg";
 
-function Gallery() {
+function Gallery({ closeSlider }) {
   return (
-    <div className={Style.gallery}>
+    <div onClick={closeSlider} className={Style.gallery}>
       <img src={GOne} alt="" />
       <img src={G2} alt="" />
       <img src={G3} alt="" />
