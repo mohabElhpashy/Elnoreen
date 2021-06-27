@@ -13,41 +13,23 @@ function Footer() {
   });
   return (
     <div className="Footer">
-      {/* <div className="ContactDiv">
-        <div>
-          <span>
-            <FaFacebookSquare size={30} />
-          </span>
-          <span>
-            <FaYoutube size={30} />
-          </span>
-          <span>
-            <FaTwitter size={30} />
-          </span>
-          <span>
-            <FaInstagram size={30} />
-          </span>
-        </div>
-      </div> */}
-
       <h2
         style={{
           color: "white",
           textAlign: "center",
           display: "flex",
-          alignItems: "center",
+          margin: "auto",
         }}
       >
-        <img src={My_Logo} alt="" />
+        <img style={{ borderRadius: "7px" }} src={My_Logo} alt="" />
         قمم الرياض لنقل الاثاث
       </h2>
       <div
         style={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: "column",
           alignItems: "center",
           justifyContent: "space-around",
-          flexWrap: "wrap",
         }}
       >
         <h3
@@ -56,6 +38,9 @@ function Footer() {
             textAlign: "center",
             padding: "10px",
             fontWeight: "bold",
+            border: "1px solid gainsboro",
+            borderRadius: "15px",
+            boxShadow: "0px 1px 3px white",
           }}
         >
           شركة قمم الرياض الاثاث هي شركة النقل الرائدة في المملكه العربية

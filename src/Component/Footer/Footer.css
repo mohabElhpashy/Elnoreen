@@ -5,7 +5,7 @@
   bottom: 0;
   height: 36rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  flex-wrap: wrap;
   padding-bottom: 75px;
 }
