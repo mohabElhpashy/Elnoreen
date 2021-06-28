@@ -6,7 +6,7 @@
 
       <loc>http://www.qimamalryad.com/</loc>
 
-      <lastmod> 2021-6-29</lastmod>
+      <lastmod> 2021-06-29</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -18,17 +18,18 @@
 
       <loc>http://www.qimamalryad.com/About_us</loc>
 
-      <changefreq>weekly</changefreq>
+  <lastmod> 2021-06-29</lastmod>
 
+      <changefreq>monthly</changefreq>
    </url>
 
    <url>
 
       <loc>http://www.qimamalryad.com/Serviece</loc>
 
-      <lastmod>2021-6-29</lastmod>
+       <lastmod> 2021-06-29</lastmod>
 
-      <changefreq>weekly</changefreq>
+      <changefreq>monthly</changefreq>
 
    </url>
 
@@ -36,9 +37,9 @@
 
       <loc>http://www.qimamalryad.com/gallery</loc>
 
-      <lastmod>2021-6-29</lastmod>
+      <lastmod> 2021-6-29</lastmod>
 
-      <priority>0.3</priority>
+      <changefreq>monthly</changefreq>
 
    </url>
 
