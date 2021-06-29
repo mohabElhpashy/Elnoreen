@@ -61,6 +61,7 @@ function App() {
               render={(props) => (
                 <Gallery closeSlider={Close_Slider} {...props} />
               )}
+              git
             />
           </Switch>
           <Whats />
